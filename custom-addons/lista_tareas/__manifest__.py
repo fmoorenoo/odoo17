@@ -18,6 +18,12 @@ Holaaaaaaa
     'category': 'Productivity',
     'version': '0.1',
 
+    'assets': {
+        'web.assets_backend': [
+            'lista_tareas/views/custom.css',
+        ],
+    },
+
     # any module necessary for this one to work correctly
     'depends': ['base'],
 
