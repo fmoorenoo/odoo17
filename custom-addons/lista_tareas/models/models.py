@@ -11,6 +11,7 @@ class lista_tareas(models.Model):
      prioridad = fields.Integer()
      urgente = fields.Boolean(compute="_Value_urgente", store=True)
      realizada = fields.Boolean()
+     fecha = fields.Date()
 
      @api.depends('prioridad')
      def _value_urgente(self):
